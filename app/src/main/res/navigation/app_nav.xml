@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/cameraFragment">
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.robustatask.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_weatherInfoFragment"
+            app:destination="@id/weatherInfoFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/no_animation"
+            app:popEnterAnim="@anim/no_animation"
+            app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_cameraFragment_to_weatherHistoryFragment"
+            app:destination="@id/weatherHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherInfoFragment"
+        android:name="com.example.robustatask.ui.weatherInfo.WeatherInfoFragment"
+        android:label="fragment_weather_info"
+        tools:layout="@layout/fragment_weather_info" >
+        <argument
+            android:name="weatherItem"
+            app:argType="com.example.robustatask.model.weatherHistory.WeatherHistoryItem" />
+        <action
+            android:id="@+id/action_weatherInfoFragment_to_shareBottomSheetFragment"
+            app:destination="@id/shareBottomSheetFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/no_animation"
+            app:popEnterAnim="@anim/no_animation"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherHistoryFragment"
+        android:name="com.example.robustatask.ui.weatherHistory.WeatherHistoryFragment"
+        android:label="fragment_weather_history"
+        tools:layout="@layout/fragment_weather_history" >
+        <action
+            android:id="@+id/action_weatherHistoryFragment_to_shareBottomSheetFragment"
+            app:destination="@id/shareBottomSheetFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/no_animation"
+            app:popEnterAnim="@anim/no_animation"
+            app:popExitAnim="@anim/slide_down" />
+    </fragment>
+    <dialog
+        android:id="@+id/shareBottomSheetFragment"
+        android:name="com.example.robustatask.ui.share.ShareBottomSheetFragment"
+        android:label="fragment_share_bottom_sheet"
+        tools:layout="@layout/fragment_share_bottom_sheet" >
+        <argument
+            android:name="weatherItem"
+            app:argType="com.example.robustatask.model.weatherHistory.WeatherHistoryItem" />
+    </dialog>
+</navigation>

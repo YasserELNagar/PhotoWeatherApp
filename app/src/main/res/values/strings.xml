@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RobustaTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="city">City</string>
+    <string name="temperature_c">Temperature (c°)</string>
+    <string name="weather_condition">Weather Condition</string>
+    <string name="no_network">Network Not Available</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="required">Required</string>
+    <string name="sahre_to">Share To</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="other">Other</string>
+    <string name="please_open_gps">please open gps</string>
+    <string name="gps_request">Goto Settings Page To Enable GPS</string>
+</resources>
