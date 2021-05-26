@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.weatherHistory.WeatherHistoryFragment">
+    tools:context="com.example.photoweatherapp.ui.weatherHistory.WeatherHistoryFragment">
 
     <data>
         <variable
             name="viewModel"
-            type="com.example.robustatask.ui.weatherHistory.WeatherHistoryViewModel" />
+            type="com.example.photoweatherapp.ui.weatherHistory.WeatherHistoryViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

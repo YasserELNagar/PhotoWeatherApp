@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.weatherInfo.WeatherInfoFragment">
+    tools:context="com.example.photoweatherapp.ui.weatherInfo.WeatherInfoFragment">
 
     <data>
         <variable
             name="viewModel"
-            type="com.example.robustatask.ui.weatherInfo.WeatherInfoViewModel" />
+            type="com.example.photoweatherapp.ui.weatherInfo.WeatherInfoViewModel" />
    
         <variable
             name="isLoading"

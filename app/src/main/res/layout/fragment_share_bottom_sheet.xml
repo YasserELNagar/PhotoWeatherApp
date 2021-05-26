@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.share.ShareBottomSheetFragment">
+    tools:context="com.example.photoweatherapp.ui.share.ShareBottomSheetFragment">
 
     <data>
         <variable
             name="viewModel"
-            type="com.example.robustatask.ui.share.ShareViewModel" />
+            type="com.example.photoweatherapp.ui.share.ShareViewModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

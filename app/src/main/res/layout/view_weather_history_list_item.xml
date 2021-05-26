@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.example.robustatask.model.weatherHistory.WeatherHistoryItem" />
+            type="com.example.photoweatherapp.model.weatherHistory.WeatherHistoryItem" />
 
         <variable
             name="position"
@@ -15,7 +15,7 @@
 
         <variable
             name="clickListener"
-            type="com.example.robustatask.ui.weatherHistory.adapter.WeatherHistoryItemsAdapter.WeatherHistoryItemClickListener" />
+            type="com.example.photoweatherapp.ui.weatherHistory.adapter.WeatherHistoryItemsAdapter.WeatherHistoryItemClickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

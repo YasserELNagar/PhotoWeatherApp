@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.camera.CameraFragment">
+    tools:context="com.example.photoweatherapp.ui.camera.CameraFragment">
 
     <data>
         <variable
             name="viewModel"
-            type="com.example.robustatask.ui.camera.CameraViewModel" />
+            type="com.example.photoweatherapp.ui.camera.CameraViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

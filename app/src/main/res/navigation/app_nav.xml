@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/cameraFragment"
-        android:name="com.example.robustatask.ui.camera.CameraFragment"
+        android:name="com.example.photoweatherapp.ui.camera.CameraFragment"
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera" >
         <action
@@ -23,12 +23,12 @@
     </fragment>
     <fragment
         android:id="@+id/weatherInfoFragment"
-        android:name="com.example.robustatask.ui.weatherInfo.WeatherInfoFragment"
+        android:name="com.example.photoweatherapp.ui.weatherInfo.WeatherInfoFragment"
         android:label="fragment_weather_info"
         tools:layout="@layout/fragment_weather_info" >
         <argument
             android:name="weatherItem"
-            app:argType="com.example.robustatask.model.weatherHistory.WeatherHistoryItem" />
+            app:argType="com.example.photoweatherapp.model.weatherHistory.WeatherHistoryItem" />
         <action
             android:id="@+id/action_weatherInfoFragment_to_shareBottomSheetFragment"
             app:destination="@id/shareBottomSheetFragment"
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/weatherHistoryFragment"
-        android:name="com.example.robustatask.ui.weatherHistory.WeatherHistoryFragment"
+        android:name="com.example.photoweatherapp.ui.weatherHistory.WeatherHistoryFragment"
         android:label="fragment_weather_history"
         tools:layout="@layout/fragment_weather_history" >
         <action
@@ -53,11 +53,11 @@
     </fragment>
     <dialog
         android:id="@+id/shareBottomSheetFragment"
-        android:name="com.example.robustatask.ui.share.ShareBottomSheetFragment"
+        android:name="com.example.photoweatherapp.ui.share.ShareBottomSheetFragment"
         android:label="fragment_share_bottom_sheet"
         tools:layout="@layout/fragment_share_bottom_sheet" >
         <argument
             android:name="weatherItem"
-            app:argType="com.example.robustatask.model.weatherHistory.WeatherHistoryItem" />
+            app:argType="com.example.photoweatherapp.model.weatherHistory.WeatherHistoryItem" />
     </dialog>
 </navigation>

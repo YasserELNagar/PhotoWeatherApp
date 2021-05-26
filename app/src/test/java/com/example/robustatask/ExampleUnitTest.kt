@@ -1,4 +1,4 @@
-package com.example.robustatask
+package com.example.photoweatherapp
 
 import org.junit.Test
 
